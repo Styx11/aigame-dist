@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+      // 获取当前路径
+      const path = window.location.pathname;
+      // 如果路径不是以 /aigame-dist/ 开头，则添加
+      if (!path.startsWith('/aigame-dist/')) {
+        window.location.href = '/aigame-dist' + path;
+      } else {
+        // 否则重定向到 index.html
+        window.location.href = '/aigame-dist/index.html';
+      }
+    </script>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+  </body>
+</html> 
